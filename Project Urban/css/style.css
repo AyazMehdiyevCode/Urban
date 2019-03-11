@@ -1,0 +1,229 @@
+
+@import url("https://fonts.googleapis.com/css?family=Scope+One|Trocchi");
+*{
+    font-family: "Scope One", serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+}
+ul{
+    list-style-type: none;
+    padding:0px;
+    margin:0px;
+}
+.cl-blue{
+    color:#3498db
+}
+.bg-blue{
+    background-color:#3498db
+}
+h1{
+    font-size:4rem;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+p{
+    margin-bottom: 15px;
+    line-height: 1.4rem
+}
+.btn{
+    height: 2.5rem;
+    font-weight: 600;
+    display: inline-block;
+    box-sizing: border-box;
+    padding:0 20px;
+    line-height: 2.5rem;
+    background-color:#3498db;
+    border-radius:5px;
+    color: white;
+    transition: background-color 1s;
+}
+.btn:hover{
+    background-color:#4aa3df;
+}
+.btn-lg{
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.3rem;
+}
+.btn-white{
+    color:#3498db;
+    background-color: white;
+}
+.btn-white:hover{background-color:white;
+}
+/*navbar*/
+#navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+#navbar>div{
+    padding: 0 0;
+}
+#navbar .row{
+    padding: 0 20px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color:rgb(224, 224, 224);
+}
+
+#navbar i{
+    margin-right: 3px;
+}
+#navbar div:nth-child(2) a:hover{
+    color: #3498db
+}
+/*aside*/
+
+.aside{
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    display: inline-block;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    color:rgb(224, 224, 224);
+    transition:1s;
+}
+.aside ul{
+    margin-top:50px;
+}
+.aside ul li { 
+    padding:16px 0;
+    margin:0 20px;
+}
+.aside ul li:not(:last-child){
+    border-bottom: 0.5px solid rgb(119, 118, 118);
+}
+#navbar div:nth-child(2) a:hover .aside{
+    width: 20%;
+}
+.aside ul li:hover{
+    cursor: pointer;
+    color: #3498db;
+}
+/*urban*/
+#urban{
+    width: 100%;
+    height: 90vh;
+    background-image: url('./images/banner.jpg');
+    background-size: cover;
+    color:white;
+    position: relative;
+}
+#urban>div{
+    padding: 0px;
+}
+#urban p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+#urban .row{
+    z-index: 2;
+}
+#urban .filter-black{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    animation: bg-color 3s ease-in 0s  normal forwards;
+}
+
+@keyframes bg-color {
+    from{background-color: rgba(0, 0, 0, 1)}
+    to{background-color: rgba(0, 0, 0, 0.4)}
+}
+/*maecenas*/
+#maecenas,#uspendisse ,#aliquam{
+    padding: 50px 0;
+    background-color: #fafafa;
+    color: #999999;
+}
+#maecenas h3, #aliquam h2{
+    color: black
+}
+#maecenas img, #uspendisse img ,#aliquam img{ 
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 0 0 0 6.7px white, 0 0 0 7px rgb(221, 221, 221);
+}
+/*uspendisse*/
+#uspendisse{
+    background-color: #3498db;
+    color: white;
+}
+#uspendisse p{
+    opacity: 0.7;
+}
+#uspendisse img{ 
+    box-shadow: 0 0 0 6.7px #3498db, 0 0 0 7px rgb(221, 221, 221);
+}
+/*aliquam*/
+
+    #aliquam .images{
+        padding: 0 20px;
+    }
+#aliquam p{
+    padding:10px 0;
+}
+/*footer*/
+footer{
+    padding: 40px 0;
+}
+footer i{
+    font-size: 20px;
+    padding: 10px;
+    margin:10px;
+    border-radius: 100%;
+    width: 45px;
+    color: #b9b9b9;
+    box-shadow: 0 0 0 0.5px #b9b9b9,0 0 0 5px white, 0 0 0 5.5px #b9b9b9;
+    opacity: 1;
+    transition:opacity 0.5s;
+}
+footer i:hover ,footer a:hover{
+    opacity: 0.5;
+    
+}
+footer p{
+    color: #b9b9b9;
+    padding-top:20px;
+}
+footer a{
+    color: #929292;
+    transition:opacity 0.5s;
+}
+@media only screen and (max-width:576px) {
+    h1{
+        font-size:2rem;
+        margin-bottom: 10px;
+    }
+    .btn-lg{
+        height: 2.5rem;
+        line-height: 2.5rem;
+        font-size: 1rem;
+    }
+    #urban p{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    #maecenas,#uspendisse {
+        text-align: center;
+    }
+    #aliquam .images{
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    }
+    
